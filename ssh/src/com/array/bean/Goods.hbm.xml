@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-1-21 0:17:11 by Hibernate Tools 3.6.0.Final -->
+<hibernate-mapping>
+    <class name="com.array.bean.Goods" table="goods" catalog="arraytech">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="pname" type="string">
+            <column name="pname" not-null="true" />
+        </property>
+        <property name="pdate" type="string">
+            <column name="pdate" not-null="true" />
+        </property>
+        <property name="price" type="long">
+            <column name="price" precision="10" scale="0" not-null="true" />
+        </property>
+        <property name="pcity" type="string">
+            <column name="pcity" not-null="true" />
+        </property>
+        <property name="mark" type="string">
+            <column name="mark" length="500" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

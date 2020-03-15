@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ 
+<struts>
+ <!-- 告知struts2对象，以后运行时创建对象都被spring接管 -->
+ <constant name="struts.objectFactory" value="spring"></constant>
+ <!-- 定义一个package 存储action -->
+ <package name="arrayPackage" extends="struts-default">
+   <!-- 定义action ssh -->
+   <!-- 本例子以当当图书为例  为未来spring被接管准备-->
+   <action name="goodsList" class="myGoodsAction">
+        <result name="success">/WEB-INF/views/goodsList.jsp</result>
+   </action>
+   
+ </package>
+</struts>
