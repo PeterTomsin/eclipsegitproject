@@ -12,6 +12,7 @@ import com.opensymphony.xwork2.ActionSupport;
  * @author PeterTomsin
  *
  */
+//123
 public class GoodsAction extends ActionSupport{
 	
 	//网络传输校验
